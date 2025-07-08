@@ -7,7 +7,7 @@
     </div>
     <div class="users-container flex flex-1 flex-col gap-y-6">
         @for (item of userChats; track $index) {
-            <app-user-chat-card [config]="item"></app-user-chat-card>
+            <user-card [config]="item"></user-card>
         }
     </div>
 
@@ -30,7 +30,7 @@
             <div class="messages-container flex-1 bg-customColor-greyish overflow-y-scroll">
                 <div class="message-list h-full flex flex-col gap-y-2 p-10">
                     @for (item of chats; track $index) {
-                        <app-chat-bubble [config]="item"></app-chat-bubble>
+                        <chat-card [config]="item"></chat-card>
                     } 
                 </div>
             </div>

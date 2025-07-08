@@ -3,13 +3,13 @@ import { UserChatConfig } from '../../interfaces/ui-configs/user-chat-config.int
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-user-chat-card',
+  selector: 'user-card',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './user-chat-card.component.html',
-  styleUrl: './user-chat-card.component.scss'
+  templateUrl: './user.component.html',
+  styleUrl: './user.component.scss'
 })
-export class UserChatCardComponent {
+export class UserCardComponent {
 
   @Input() config!: UserChatConfig;
 }

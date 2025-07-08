@@ -2,18 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { SearchInputComponent } from "../../components/search-input/search-input.component";
 import { CommonModule } from '@angular/common';
 import { UserChatConfig } from '../../interfaces/ui-configs/user-chat-config.interface';
-import { UserChatCardComponent } from '../../components/user-chat-card/user-chat-card.component';
 import { AuthService } from '../../services/auth.service';
 import { ChatService } from '../../services/chat.service';
-import { ChatBubbleComponent } from '../../components/chat-bubble/chat-bubble.component';
 import { ChatBubbleConfig } from '../../interfaces/ui-configs/chat-bubble-config.interface';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ChatRoom, Message } from '../../interfaces/models/chat-room.interface';
+import { UserCardComponent } from '../../components/user/user.component';
+import { ChatCardComponent } from '../../components/chat-card/chat-card.component';
 
 @Component({
   selector: 'app-chats',
   standalone: true,
-  imports: [SearchInputComponent, CommonModule, UserChatCardComponent ,ChatBubbleComponent, ReactiveFormsModule],
+  imports: [SearchInputComponent, CommonModule, UserCardComponent ,ChatCardComponent, ReactiveFormsModule],
   templateUrl: './chats.component.html',
   styleUrl: './chats.component.scss'
 })
